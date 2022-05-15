@@ -1,0 +1,8 @@
+<div class="flex-column items-center">
+    <input class="text-3xl shadow-lg p-4 " placeholder="What needs to be done?" (keydown)="addToList($event)">
+    <ul *ngIf="list.length > 0" class="text-5xl bg-white">
+        <li *ngFor="let todo of list" (click)="markAsCompleted($event)" class="p-5 text-lg shadow-sm">{{todo}}</li>
+    </ul>
+    <p class="bg-white p-3 my-1">{{items}} items left</p>
+</div>
+    
