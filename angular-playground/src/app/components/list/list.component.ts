@@ -8,7 +8,7 @@ import { Component, Output } from '@angular/core';
 })
 
 export class ListComponent {
-  list: Array<string> = ['asd'];
+  list: Array<string> = [];
   items:number = this.list.length;
 
   addToList($event:any):void{
@@ -18,7 +18,6 @@ export class ListComponent {
       this.items++;
       $event.target.value = '';
     }
-    
   }
 
   markAsCompleted($event:any):void{

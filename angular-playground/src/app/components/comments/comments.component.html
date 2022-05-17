@@ -1,0 +1,8 @@
+<br />
+
+<button (click)="onPost()">POST</button>
+
+<div *ngFor="let post of list">
+  {{ post.title }}
+  <button class="text-[red]" (click)="onDelete(post.id)">DEL</button>
+</div>
